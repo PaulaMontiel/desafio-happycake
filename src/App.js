@@ -10,11 +10,10 @@ import Contact from "./views/Contacto";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="desafio-happycake">
         <Navbar />
-        <Home />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="*" element={<Home/>} />
           <Route path="/planes" element={<Contact/>} />
       </Routes>
     </BrowserRouter>
